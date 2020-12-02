@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+	<title>Ahan Sahu</title>
+</head>
+<body>
+
+	<!-- Vertical FlexBox to hold text -->
+	<div class="introduction_box">
+
+		
+		<div class="name_line" aria-labelledby="Hi, I'm Ahan Sahu">
+			Hi, I'm Ahan Sahu.
+		</div>
+
+		<div class="intro_line" aria-labelledby="Introduction">
+			A student at Northwestern, and passionate about Data Analytics and Software Engineering. I truly enjoy being able to create realistic and actionable solutions through analyzing data.
+		</div>
+
+		<!-- Horizontal FlexBox to hold navigation buttons -->
+		<div class="button_box">
+			<a href="AboutMe.html"><button aria-labelledby="About Me">About Me</button></a>
+			<a href="Ahan Sahu Resume Sep.pdf" download="AhanSahuResume" target="_blank"><button aria-labelledby="My Resume">Resume</button></a>
+			<a href="ContactMe.html"><button aria-labelledby="Contact Me">Contact Me</button></a>
+		</div>
+
+		<div class="project_line" aria-labelledby="My Projects">
+			My Projects
+		</div>
+
+		<!-- Button that takes user to another div lower on in the page -->
+		<a href="#project_intro">
+			<button class="to_projects">
+				<i class="material-icons">expand_more</i>
+			</button>
+		</a>
+
+	</div>
+	
+	<!-- Vertical FlexBox to hold rows of projects -->
+	<div class="project_box">
+		
+		<div id="project_intro">
+			Check out some of my projects - 
+		</div>
+
+		<!-- Horizontal FlexBox to hold 2 different projects -->
+		<div class="project_row">
+
+			<div class="project" aria-labelledby="FlickPick">
+
+  				<img src="FlickPick.png" alt="FlickPick" class="project_image">
+
+  				<div class="project_desc">
+  					
+  					<b>FlickPick</b>
+
+  					<br>
+  					<br>
+
+  					An intuitive communication device made for our client who had cerebral palsy and a developmental disability.
+
+
+  					<br>
+  					<br>
+
+  					<!-- Button to read more about project -->
+  					<a href="FlickPick.html">
+  						<button class="project_readmore" aria-labelledby="Read More">
+  							Read More
+  						</button>
+  					</a>
+
+  				</div>
+			</div>
+
+			<div class="project" aria-labelledby="SnapShot">
+
+  				<img src="SnapShot.png" alt="SnapShot" class="project_image">
+
+  				<div class="project_desc">
+  					
+  					<b>SnapShot</b>
+
+  					<br>
+  					<br>
+
+  					An accessible and simple to use photography set-up that allows design students to take professional level photos of their products.
+
+
+  					<br>
+  					<br>
+
+  					<!-- Button to read more about project -->
+  					<button class="project_readmore" aria-labelledby="Read More">
+  						Read More
+  					</button>
+
+  				</div>
+			</div>
+
+		</div>
+
+		<!-- Horizontal FlexBox to hold 2 different projects -->
+		<div class="project_row">
+
+			<div class="project" aria-labelledby="FlashFood">
+
+  				<img src="FlashFood.png" alt="FlashFood" class="project_image">
+
+  				<div class="project_desc">
+  					
+  					<b>FlashFood</b>
+
+  					<br>
+  					<br>
+
+  					An efficient solution to the operational issues restaurants face while their servers are busy. FlashFood ensures that customers get quick service all the time.
+
+  					<br>
+  					<br>
+
+  					<!-- Button to read more about project -->
+  					<button class="project_readmore" aria-labelledby="Read More">
+  						Read More
+  					</button>
+
+  				</div>
+			</div>
+
+			<div class="project" aria-labelledby="Twitter Sentiment Analysis">
+
+  				<img src="Twitter.png" alt="Twitter Sentiment Analysis" class="project_image">
+
+  				<div class="project_desc">
+  					
+  					<b>Twitter Sentiment Analysis</b>
+
+  					<br>
+  					<br>
+
+  					A Naive Bayesian Classifier written in Python to classify Tweets as hate speech or not, using multiple Natural Language Processing techniques. 
+
+
+  					<br>
+  					<br>
+  					
+  					<!-- Button to read more about project -->
+  					<button class="project_readmore" aria-labelledby="Read More">
+  						Read More
+  					</button>
+
+  				</div>
+			</div>
+
+		</div>
+
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+</html>

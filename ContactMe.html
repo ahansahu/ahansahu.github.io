@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+	<title>Contact Me</title>
+</head>
+<body>
+
+	<nav id="top-nav" class="top-nav">
+		<ul>
+			<a href="main.html" aria-labelledby="Homepage"><li>Home</li></a>
+			<a href="AboutMe.html" aria-labelledby="About Me"><li>About Me</li></a>
+			<a href="Ahan Sahu Resume Sep.pdf" download="AhanSahuResume" target="_blank" aria-labelledby="Resume"><li>Resume</li></a>
+			<a href="ContactMe.html" aria-labelledby="Contact Me"><li>Contact Me</li></a>
+			<li><a href="main.html#project_intro" aria-labelledby="My Projects">Projects</a>
+				<ul class = "project_menu">
+					<a href="FlickPick.html" aria-labelledby="FlickPick"><li>FlickPick</li></a>
+					<li>SnapShot</li>
+					<li>FlashFood</li>
+					<li>Twitter Sentiment Analysis</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+
+	<!-- Horizontal FlexBox to hold form and other socials -->
+	<div class="contact_box">
+
+	    <!-- Vertical FlexBox to hold text and icons -->
+	    <div class="socials_box">
+	     
+	        Please fill the form on the right to get in touch with me, or contact me at one of my socials linked below!
+	        
+	        <!-- Horizontal FlexBox to hold icons -->
+	        <div class="icons" aria-labelledby="My Social Media">
+
+	           <!-- Icons with links to my social media -->
+	           <a href="mailto:ahansahu2022@u.northwestern.edu" class="fa fa-envelope" target="_blank"></a>
+	           <a href="https://github.com/ahansahu" class="fa fa-github" target="_blank"></a>
+	           <a href="https://www.linkedin.com/in/ahan-sahu-a468831b2/" class="fa fa-linkedin" target="_blank"></a>
+	        </div>
+
+	        <!-- My email ID and mobile no. -->
+	        <div class="more_socials">ahansahu2022@u.northwestern.edu | +1 224-714-8560</div>
+	     
+	    </div>
+
+
+        <!-- A form that sends an email containing fillers first name, last name, job title, email and message to my email -->
+        <form action="mailto:ahansahu2022@u.northwestern.edu" method="post" enctype="text/plain" aria-labelledby="Fill this form to contact me">
+                    
+			<!-- First name of filler -->
+	        <br>First Name: <br><input type="text" name="name" placeholder="Please enter your first name..."><br><br>
+	        
+	        <!-- Last name of filler -->
+	        Last Name: <br><input type="text" name="name" placeholder="Please enter your last name..."><br><br>
+	        
+	        <!-- Email of the filler. Must contain @ to be valid -->
+	        E-mail: <br><input type="email" name="mail" placeholder="Please enter your email..."><br><br>
+
+	        Job Title <br>
+	        <!-- Selections for possible job titles that might contact me -->
+	        <select id="title" name="title">
+	            <option value="select">Select...</option>
+	            <option value="student">Student</option>
+	            <option value="professor">Professor</option>
+	            <option value="recruiter">Recruiter</option>
+	            <option value="other">Other</option>
+	        </select><br><br>
+	        
+	        <!-- Message the filler wants to send me -->
+	        Message: <br><input type="text" name="message" placeholder="Please enter your message here..."><br><br>
+	        
+	        <!-- Send button-->
+	        <input type="submit" value="Send" aria-labelledby="Send">
+	        
+	        <!-- Reset button to reset values in all input boxes of the form -->
+	        <input type="reset" value="Reset" aria-labelledby="Reset">
+                 
+        </form>
+                 
+    </div>
+
+	<script src="script.js"></script>
+</body>
+</html>

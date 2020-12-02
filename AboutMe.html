@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="style.css">
+	<script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+	<title>About Me</title>
+</head>
+<body>
+
+	<nav id="top-nav" class="top-nav">
+		<ul>
+			<a href="main.html" aria-labelledby="Homepage"><li>Home</li></a>
+			<a href="AboutMe.html" aria-labelledby="About Me"><li>About Me</li></a>
+			<a href="Ahan Sahu Resume Sep.pdf" download="AhanSahuResume" target="_blank" aria-labelledby="Resume"><li>Resume</li></a>
+			<a href="ContactMe.html" aria-labelledby="Contact Me"><li>Contact Me</li></a>
+			<li><a href="main.html#project_intro" aria-labelledby="My Projects">Projects</a>
+				<ul class = "project_menu">
+					<a href="FlickPick.html" aria-labelledby="FlickPick"><li>FlickPick</li></a>
+					<li>SnapShot</li>
+					<li>FlashFood</li>
+					<li>Twitter Sentiment Analysis</li>
+				</ul>
+			</li>
+		</ul>
+	</nav>
+
+	<!-- Vertical FlexBox to hold title and more information about me -->
+	<div class="aboutme_box">
+		<div class="aboutme_title" aria-labelledby="About Me">
+			About Me	
+		</div>
+		
+
+		<!-- Horixzontal FlexBox to hold a picture of me and text about me -->
+		<div class="desc_box">
+
+
+			<div class="circular_wrapper">
+				<img src="aboutme_picture.jpeg" class="aboutme_picture" alt="Picture of me">				
+			</div>
+
+			<div class="personal_desc" aria-labelledby="Description about myself">
+				I'm Ahan Sahu, a junior at Northwestern pursuing a joint BS/MS program with a BS in Industrial Engineering and Management Sciences, an MS in Computer Science and a minor in Data Science. My educational background is a great intersection between multiple areas including Software Engineer and Data Analytics/Science, and provides me with the valuable technical knowledge that I need to excel at what I love doing.
+
+				<br>
+				<br>
+
+				I'm passionate about all things data. Being able to manipulate and analyze data to gather insights from them is fascinating and mesmerizing to me. Creating pragmatic and actionable solutions from those insights to solve issues faced by people and companies in the real world is what drives me.
+			</div>
+
+			
+		</div>
+	</div>
+
+	<!-- Vertical FlexBox to hold title and information about my skills -->
+	<div class="aboutme_box">
+		<div class="skills_title" aria-labelledby="Skills">
+			Skills	
+		</div>
+		
+		<!-- Horizontal FlexBox to hold a chart of my proficiency and text -->
+		<div class="skills_desc_box">
+
+			<!-- A chart showing my proficiency in a few programming languages -->
+			<div id="skills_chart" aria-labelledby="Chart of my skills"></div>
+
+			<div class="skills_desc" aria-labelledby="Description of my skills">
+				Through multiple courses that I've taken at University, such as Data Structures, Introduction to Artificial Intelligence, Machine Learning, Optimization Methods in Data Science etc., I've learned about theoretical concepts in areas like Data Science and Machine Learning as well as developed proficiency in multiple programming languages, as shown on the graph on the left.
+
+				<br>
+				<br>
+
+				I have used these skills as part of prior work experience, research experience and to complete some of the projects I've worked on. I'm working on not just improving my skills in these areas, but also developing skills in new programming languages such as React.js, Tableau and more. I'm always looking for ways to develop further in any way possible!
+			</div>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
